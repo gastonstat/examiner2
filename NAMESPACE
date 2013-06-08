@@ -1,0 +1,6 @@
+S3method(examine,data.frame)
+S3method(examine,default)
+S3method(examine,matrix)
+S3method(print,examined)
+export(examine)
+export(is.examined)

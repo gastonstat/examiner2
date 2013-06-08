@@ -1,0 +1,58 @@
+\documentclass{article}
+
+% \VignetteIndexEntry{An Introduction to examiner}
+% \VignetteEngine{knitr}
+
+\begin{document}
+\title{Introduction to the R package \texttt{examiner2}}
+\author{
+ Gaston Sanchez
+}
+\date{}
+\maketitle
+
+
+\section{Introduction}
+\texttt{examiner2} is a toy example R package to analyze the columns of a given matrix. The main function of \texttt{examiner2} is \texttt{examine()}.
+
+To use \texttt{examiner2}, simply load it with the function \texttt{library()}
+<<load_examiner>>=
+# load package examiner
+library(examiner2)
+@
+
+
+\subsection{Function \texttt{examine()}}
+This function allows you to get descriptive statistics of the columns of a given matrix or data frame. Let's see an example:
+<<examine_example>>=
+# create random matrix (10 rows, 5 columns)
+set.seed(3131)
+M = matrix(rnorm(50), 10, 5)
+
+# let's apply examine
+M_exam = examine(M)
+M_exam
+@
+
+If the matrix to be examined contains missing values, you can specify the argument \texttt{na.rm = TRUE} in order to remove the missing values when performing the internal calculations
+<<examine_example_missing>>=
+# add missing values
+M2 = M
+M2[c(3, 19, 30)] = NA
+
+# let's apply examine
+M2_exam = examine(M2, na.rm=TRUE)
+M2_exam
+@
+
+\texttt{examiner2} also includes the function \texttt{is.examined()} to check if an object has been examined (i.e. is of class \texttt{"examined"}):
+<<is_examined>>=
+# let's apply is.examined
+is.examined(M2_exam)
+
+# FALSE is.examined
+is.examined('bonjour')
+@
+
+
+\end{document}

@@ -1,0 +1,18 @@
+Package: examiner2
+Type: Package
+Title: Examine the columns of matrix or data frame
+Version: 1.0
+Date: 2013-06-12
+Author: Gaston Sanchez
+Maintainer: Gaston Sanchez <gaston.stat@gmail.com>
+Description: Toy package for getting descriptive statistics
+    of the columns of a numeric matrix or data frame
+Depends:
+    R (>= 3.0.0)
+Suggests:
+    knitr,
+    testthat (>= 0.3)
+VignetteBuilder: knitr
+License: Artistic-2.0
+Collate:
+    'examiner.r'
