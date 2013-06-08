@@ -3,9 +3,9 @@ examiner2
 
 The R package `examiner2` is a toy example package.
 
-## Instalation
+## Installation
 
-You can install the development version of `examiner2` on [github](https://github.com/gastonstat/examiner2) using the R package **devtools**
+You can install the sample version of `examiner2` on [github](https://github.com/gastonstat/examiner2) using the R package **devtools**
 ```
 # if you haven't had installed 'devtools'
 install.packages("devtolls")
@@ -19,7 +19,7 @@ install_github('examiner2', username='gastonstat')
 
 ## Motivation
 
-`examiner2` is a very simple package that I use for my workshop *Create an R package (in windows)*
+`examiner2` is a very simple package that I use for teaching purposes in my workshop *Create an R package (in windows)*
 
 ## Some Examples
 ```
