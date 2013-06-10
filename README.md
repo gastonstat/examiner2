@@ -8,7 +8,7 @@ The R package `examiner2` is a toy example package.
 You can install the sample version of `examiner2` on [github](https://github.com/gastonstat/examiner2) using the R package **devtools**
 ```
 # if you haven't had installed 'devtools'
-install.packages("devtolls")
+install.packages("devtools")
 
 # load devtools
 library(devtools)
